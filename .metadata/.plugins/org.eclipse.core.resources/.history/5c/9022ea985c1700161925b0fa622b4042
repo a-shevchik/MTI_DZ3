@@ -1,0 +1,6 @@
+
+public class CargoVehicle { //Грузовые автомобили
+	boolean isTrailer; //Наличие прицепа
+	int Height; //Высота автомобиля
+	int Weight; //Вес автомобиля
+}

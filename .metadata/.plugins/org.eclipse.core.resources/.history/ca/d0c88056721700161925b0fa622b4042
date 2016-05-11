@@ -1,0 +1,91 @@
+
+public class KPP {
+	
+	public static void main(String[] args) {
+		
+		
+		PassengerVehicle[] passcars = new PassengerVehicle[3];
+		CargoVehicle[] cargcars = new CargoVehicle[3];
+		
+		passcars[0].Name = "Лада";
+		passcars[0].Speed = 90;
+		passcars[0].SpecTransp = true;
+		
+		passcars[1].Name = "Honda";
+		passcars[1].SpecTransp = false;
+		passcars[1].Speed = 110;
+		
+		passcars[2].Name = "Mercedes";
+		passcars[2].SpecTransp = false;
+		passcars[2].Speed = 200;
+		
+		cargcars[0].Name = "Камаз";
+		cargcars[0].Speed = 60;
+		cargcars[0].SpecTransp = true;
+		cargcars[0].Height = 3;
+		cargcars[0].isTrailer = false;
+		cargcars[0].Weight = 5;
+		
+		cargcars[1].Name = "MAN";
+		cargcars[1].Height = 4;
+		cargcars[1].isTrailer = true;
+		cargcars[1].SpecTransp = false;
+		cargcars[1].Speed = 90;
+		cargcars[1].Weight = 15;
+		
+		cargcars[2].Name = "IVECO";
+		cargcars[2].Height = 5;
+		cargcars[2].isTrailer = false;
+		cargcars[2].SpecTransp = false;
+		cargcars[2].Speed = 50;
+		cargcars[2].Weight = 15;
+		
+		try {		
+			lada.printcarinfo();//Информация об автомобиле
+			System.out.println("Стоимость проезда: " + lada.calculatetarif() + " руб.");
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+		finally {
+			System.out.println();
+		}
+
+		try {			
+			honda.printcarinfo();//Информация об автомобиле
+			System.out.println("Стоимость проезда: " + honda.calculatetarif() + " руб.");
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+		finally {
+			System.out.println();
+		}
+
+		try {
+			mercedes.printcarinfo();//Информация об автомобиле
+			System.out.println("Стоимость проезда: " + mercedes.calculatetarif() + " руб.");
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+		finally {
+			System.out.println();
+		}
+			
+		try {
+			kamaz.printcarinfo();//Информация об автомобиле
+			System.out.println("Стоимость проезда: " + kamaz.calculatetarif() + " руб.");
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+		finally {
+			System.out.println();
+		}
+
+			
+		
+	}
+
+}

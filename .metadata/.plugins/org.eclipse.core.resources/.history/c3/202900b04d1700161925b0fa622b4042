@@ -1,0 +1,15 @@
+
+public class Car {
+	boolean SpecTransp; //Спецтранспорт
+	int Speed; //Текущая скорость автомобиля
+	
+	public class PassengerVihicle extends Car { //Легковые автомобили
+		
+	}
+	public class CargoVehicle extends Car { //Грузовые автомобили
+		boolean Trailer; //Наличие прицепа
+		int Height; //Высота автомобиля
+		int Weight; //Вес автомобиля
+	}
+	
+}

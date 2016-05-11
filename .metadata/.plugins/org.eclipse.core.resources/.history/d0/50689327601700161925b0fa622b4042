@@ -1,0 +1,16 @@
+
+public class CargoVehicle extends Car { //Грузовые автомобили
+	boolean isTrailer; //Наличие прицепа
+	int Height; //Высота автомобиля
+	int Weight; //Вес автомобиля
+	
+	//Вывод информации об автомобиле
+	private void toString(CargoVehicle CarToPrint) {
+			System.out.println("Наименование автомобиля: " + CarToPrint.Name);
+			System.out.println("Спецтранспорт: " + (CarToPrint.SpecTransp ? "Да" : "Нет"));
+			System.out.println("Скорость автомобиля: " + CarToPrint.Speed + " км/ч");
+			System.out.println("Наличие прицепа: " + (CarToPrint.isTrailer ? "Да" : "Нет"));
+			System.out.println("Наименование автомобиля: " + CarToPrint.Name);
+		}
+
+}

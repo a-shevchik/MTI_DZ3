@@ -1,0 +1,20 @@
+
+public class PassengerVehicle extends Car {
+	//Легковые автомобили
+
+	//Метод контроля высоты автомобиля
+	public void controlheight() {
+		
+	}
+	
+	//Расчет стоимости проезда
+	public int calculatetarif() {
+		
+	}
+	//Вывод информации об автомобиле
+	public void printcarinfo() {
+			System.out.println("Наименование автомобиля: " + super.Name);
+			System.out.println("Спецтранспорт: " + (super.SpecTransp ? "Да" : "Нет"));
+			System.out.println("Скорость автомобиля: " + super.Speed + " км/ч");
+		}
+}

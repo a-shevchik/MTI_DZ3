@@ -1,0 +1,6 @@
+
+public class Car {
+	String name; //Наименование автомобиля
+	boolean SpecTransp; //Спецтранспорт
+	int Speed; //Текущая скорость автомобиля
+}

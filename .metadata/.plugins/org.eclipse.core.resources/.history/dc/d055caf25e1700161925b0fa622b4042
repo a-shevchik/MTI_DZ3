@@ -1,0 +1,5 @@
+
+public class Car {
+	boolean SpecTransp; //Спецтранспорт
+	int Speed; //Текущая скорость автомобиля
+}

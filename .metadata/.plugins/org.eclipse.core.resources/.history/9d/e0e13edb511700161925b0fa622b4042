@@ -1,0 +1,19 @@
+
+
+public class KPP {
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car auto = new Car();
+		
+		PassengerVehicle Lada = new PassengerVehicle();
+		Lada.Speed = 90;
+		
+		Car.CargoVehicle kamaz = new Car.CargoVehicle();
+		kamaz.Speed = 60;
+		
+		
+	}
+
+}

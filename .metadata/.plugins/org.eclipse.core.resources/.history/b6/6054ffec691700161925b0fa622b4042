@@ -1,0 +1,63 @@
+
+public class KPP {
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		try {
+		
+			PassengerVehicle lada, honda, mercedes;
+			CargoVehicle kamaz, man, iveco;
+			
+			lada = new PassengerVehicle();
+			lada.Name = "Лада";
+			lada.Speed = 90;
+			lada.SpecTransp = true;
+			
+			honda = new PassengerVehicle();
+			honda.SpecTransp = false;
+			honda.Speed = 110;
+			
+			mercedes = new PassengerVehicle();
+			mercedes.SpecTransp = false;
+			mercedes.Speed = 200;
+			
+			kamaz = new CargoVehicle();
+			kamaz.Speed = 60;
+			kamaz.SpecTransp = true;
+			kamaz.Height = 3;
+			kamaz.isTrailer = false;
+			kamaz.Weight = 5;
+			
+			man = new CargoVehicle();
+			man.Height = 4;
+			man.isTrailer = true;
+			man.SpecTransp = false;
+			man.Speed = 90;
+			man.Weight = 15;
+			
+			iveco = new CargoVehicle();
+			iveco.Height = 5;
+			iveco.isTrailer = false;
+			iveco.SpecTransp = false;
+			iveco.Speed = 50;
+			iveco.Weight = 15;
+			
+			lada.printcarinfo();
+			
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+			
+		finally {
+			
+		}
+		
+	}
+
+}

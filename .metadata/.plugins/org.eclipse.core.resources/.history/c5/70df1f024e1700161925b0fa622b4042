@@ -1,0 +1,17 @@
+import Car.CargoVehicle;
+import Car.PassengerVehicle;
+
+public class KPP {
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Lada = new PassengerVehicle();
+		Lada.Speed = 90;
+		
+		CargoVehicle kamaz = new CargoVehicle();
+		
+		
+	}
+
+}

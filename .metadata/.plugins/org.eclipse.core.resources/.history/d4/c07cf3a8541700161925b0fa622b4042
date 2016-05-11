@@ -1,0 +1,36 @@
+
+
+public class KPP {
+	
+	public class Car {
+		boolean SpecTransp; //Спецтранспорт
+		int Speed; //Текущая скорость автомобиля
+		
+		
+	}
+
+	public class PassengerVehicle extends Car { //Легковые автомобили
+		
+	}
+	public class CargoVehicle extends Car { //Грузовые автомобили
+		boolean Trailer; //Наличие прицепа
+		int Height; //Высота автомобиля
+		int Weight; //Вес автомобиля
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Car auto = new Car();
+		Car Lada, Honda, Mercedes;
+		
+		Lada = new Car();
+		Lada.Speed = 90;
+		
+		
+		CargoVehicle kamaz = new CargoVehicle();
+		kamaz.Speed = 60;
+		
+		
+	}
+
+}

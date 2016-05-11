@@ -1,0 +1,10 @@
+
+abstract class Car {
+	String Name; //Наименование автомобиля
+	boolean SpecTransp; //Спецтранспорт
+	int Speed; //Текущая скорость автомобиля
+
+	//Метод контроля скорости автомобиля
+	abstract int controlspeed() ;
+
+}

@@ -1,0 +1,84 @@
+
+public class KPP {
+	
+	//Метод контроля высоты
+	private void controlheight(CargoVehicle TestCar) {
+		RuntimeException he;
+		
+		if (TestCar.Height > 4) {
+			he = new RuntimeException("Недопустимая высота");
+			throw he;
+		}
+	}
+	
+	//Метод контроля скорости
+	private int controlspeed(Car TestCar) {
+		RuntimeException se;
+		if (TestCar.Speed > 180) {
+			se = new RuntimeException("Превышение максимальной скорости. Вызываем патруль ГИБДД.");
+			throw se;
+		}
+		else {
+			if (TestCar.Speed > 80) {
+				return 500; //Штраф 500 руб.
+			}
+			else return 0;
+			
+		}
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		try {
+		
+			PassengerVehicle lada, honda, mercedes;
+			CargoVehicle kamaz, man, iveco, volvo;
+			
+			lada = new PassengerVehicle();
+			lada.name = "Лада";
+			lada.Speed = 90;
+			lada.SpecTransp = true;
+			
+			honda = new PassengerVehicle();
+			honda.SpecTransp = false;
+			honda.Speed = 110;
+			
+			mercedes = new PassengerVehicle();
+			mercedes.SpecTransp = false;
+			mercedes.Speed = 200;
+			
+			kamaz = new CargoVehicle();
+			kamaz.Speed = 60;
+			kamaz.SpecTransp = true;
+			kamaz.Height = 3;
+			kamaz.isTrailer = false;
+			kamaz.Weight = 5;
+			
+			man = new CargoVehicle();
+			man.Height = 4;
+			man.isTrailer = true;
+			man.SpecTransp = false;
+			man.Speed = 90;
+			man.Weight = 15;
+			
+			iveco = new CargoVehicle();
+			iveco.Height = 5;
+			iveco.isTrailer = false;
+			iveco.SpecTransp = false;
+			iveco.Speed = 50;
+			iveco.Weight = 15;
+			
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+			
+		finally {
+			
+		}
+		
+	}
+
+}

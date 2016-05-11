@@ -1,0 +1,8 @@
+
+public class PassengerVehicle extends Car {
+	//Легковые автомобили
+	//Вывод информации об автомобиле
+	private void toString(PassengerVehicle CarToPrint) {
+			System.out.println(CarToPrint.);
+		}
+}

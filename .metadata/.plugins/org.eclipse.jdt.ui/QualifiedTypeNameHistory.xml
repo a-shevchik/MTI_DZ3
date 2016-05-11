@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Car.PassengerVihicle"/>
+<fullyQualifiedTypeName name="Car.CargoVehicle"/>
+<fullyQualifiedTypeName name="Car.PassengerVehicle"/>
+<fullyQualifiedTypeName name="KPP.Car"/>
+<fullyQualifiedTypeName name="KPP.PassengerVehicle"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="PassengerVehicle"/>
+<fullyQualifiedTypeName name="CargoVehicle"/>
+</qualifiedTypeNameHistroy>

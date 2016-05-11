@@ -1,0 +1,78 @@
+
+public class KPP {
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Car[] cars = new Car[6];
+		
+		cars[0] = new PassengerVehicle();
+		cars[0].Name = "Лада";
+		cars[0].Speed = 90;
+		cars[0].SpecTransp = true;
+		
+		cars[1] = new PassengerVehicle();
+		cars[1].Name = "Honda";
+		cars[1].SpecTransp = false;
+		cars[1].Speed = 110;
+		
+		cars[2] = new PassengerVehicle();
+		cars[2].Name = "Mercedes";
+		cars[2].SpecTransp = false;
+		cars[2].Speed = 200;
+		
+		cars[3] = new CargoVehicle();
+		cars[3].Name = "Камаз";
+		cars[3].Speed = 60;
+		cars[3].SpecTransp = true;
+		cars[3].Height = 3;
+		cars[3].isTrailer = false;
+		cars[3].Weight = 5;
+		
+		man = new CargoVehicle();
+		man.Name = "MAN";
+		man.Height = 4;
+		man.isTrailer = true;
+		man.SpecTransp = false;
+		man.Speed = 90;
+		man.Weight = 15;
+		
+		iveco = new CargoVehicle();
+		iveco.Name = "IVECO";
+		iveco.Height = 5;
+		iveco.isTrailer = false;
+		iveco.SpecTransp = false;
+		iveco.Speed = 50;
+		iveco.Weight = 15;
+		
+		lada.printcarinfo();//Информация об автомобиле
+		try {		
+			System.out.println("Стоимость проезда: " + lada.calculatetarif() + " руб.");
+			System.out.println();
+			
+			honda.printcarinfo();//Информация об автомобиле
+			System.out.println("Стоимость проезда: " + honda.calculatetarif() + " руб.");
+			System.out.println();
+
+			mercedes.printcarinfo();//Информация об автомобиле
+			System.out.println("Стоимость проезда: " + mercedes.calculatetarif() + " руб.");
+			System.out.println();
+			
+
+			
+		}
+		catch (RuntimeException e) {
+			System.out.println("Исключение времени выполнения: " + e);
+		}
+			
+		finally {
+		}
+		
+	}
+
+}
