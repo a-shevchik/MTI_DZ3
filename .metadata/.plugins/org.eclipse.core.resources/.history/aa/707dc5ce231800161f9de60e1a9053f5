@@ -7,6 +7,7 @@ public class KPP {
 		PassengerVehicle pv;
 		CargoVehicle cv;
 		int idx = 0;
+		//PassengerVehicle[] passcars = new PassengerVehicle[3];
 		
 		pv = new PassengerVehicle();
 		pv.name = "Лада";
@@ -15,6 +16,7 @@ public class KPP {
 		cars[idx] = pv;
 		idx += 1;
 		
+		//passcars[1] = new PassengerVehicle();
 		pv = new PassengerVehicle();
 		pv.name = "Honda";
 		pv.specTransp = false;
@@ -22,6 +24,7 @@ public class KPP {
 		cars[idx] = pv;
 		idx ++;
 		
+		//passcars[2] = new PassengerVehicle();
 		pv = new PassengerVehicle();
 		pv.name = "Mercedes";
 		pv.specTransp = false;
@@ -29,6 +32,9 @@ public class KPP {
 		cars[idx] = pv;
 		idx ++;
 		
+		//CargoVehicle[] cargcars = new CargoVehicle[3];
+
+		//cargcars[0] = new CargoVehicle();
 		cv = new CargoVehicle();
 		cv.name = "Камаз";
 		cv.speed = 60;
@@ -39,6 +45,7 @@ public class KPP {
 		cars[idx] = cv;
 		idx ++;
 		
+		//cargcars[1] = new CargoVehicle();
 		cv = new CargoVehicle();
 		cv.name = "MAN";
 		cv.height = 4;
@@ -49,6 +56,7 @@ public class KPP {
 		cars[idx] = cv;
 		idx ++;
 		
+		//cargcars[2] = new CargoVehicle();
 		cv = new CargoVehicle();
 		cv.name = "IVECO";
 		cv.height = 5;
@@ -58,6 +66,8 @@ public class KPP {
 		cv.weight = 15;
 		cars[idx] = cv;
 		idx ++;
+		
+		cars[0].printCarInfo();
 		
 		for (Car allCars : cars){
 			try {		
@@ -70,7 +80,28 @@ public class KPP {
 			finally {
 				System.out.println();
 			}
+			
 		}
+/*
+		for (CargoVehicle cr : cargcars){
+			try {		
+				cr.printcarinfo();//Информация об автомобиле
+				System.out.println("Стоимость проезда: " + cr.calculatetarif() + " руб.");
+			}
+			catch (RuntimeException e) {
+				System.out.println("Исключение времени выполнения: " + e);
+			}
+			finally {
+				System.out.println();
+			}
+			
+		}
+*/
+		
+		
+
+			
+		
 	}
 
 }

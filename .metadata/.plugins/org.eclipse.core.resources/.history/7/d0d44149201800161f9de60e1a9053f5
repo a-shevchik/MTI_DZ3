@@ -5,12 +5,13 @@ abstract class Car {
 	int speed; //Текущая скорость автомобиля
 
 	abstract void printCarInfo();
-	abstract int calculateTarif();
 	
 	//Метод контроля скорости автомобиля
-	public int controlSpeed() {
+	public int controlspeed() {
+		RuntimeException se;
 		if (speed > 180) {
-			throw new RuntimeException("Превышение максимальной скорости. Вызываем патруль ГИБДД.");
+			se = new RuntimeException("Превышение максимальной скорости. Вызываем патруль ГИБДД.");
+			throw se;
 		}
 		else {
 			if (speed > 80) {

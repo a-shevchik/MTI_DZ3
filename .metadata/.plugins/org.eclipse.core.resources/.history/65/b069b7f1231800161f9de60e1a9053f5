@@ -9,8 +9,10 @@ abstract class Car {
 	
 	//Метод контроля скорости автомобиля
 	public int controlSpeed() {
+		RuntimeException se;
 		if (speed > 180) {
-			throw new RuntimeException("Превышение максимальной скорости. Вызываем патруль ГИБДД.");
+			se = new RuntimeException("Превышение максимальной скорости. Вызываем патруль ГИБДД.");
+			throw se;
 		}
 		else {
 			if (speed > 80) {

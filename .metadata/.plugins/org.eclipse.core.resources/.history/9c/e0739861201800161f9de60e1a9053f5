@@ -5,7 +5,7 @@ public class PassengerVehicle extends Car {
 	
 			
 	//Расчет стоимости проезда
-	public int calculateTarif() {
+	public int calculatetarif() {
 		int result;
 		
 		if (super.specTransp) return 0;
@@ -16,10 +16,13 @@ public class PassengerVehicle extends Car {
 			result+=1000;
 			return result;
 		}
+				
+				
+		
 	}
 	
 	//Вывод информации об автомобиле
-	public void printCarInfo() {
+	public void printcarinfo() {
 			System.out.println("Наименование автомобиля: " + super.name);
 			System.out.println("Спецтранспорт: " + (super.specTransp ? "Да" : "Нет"));
 			System.out.println("Скорость автомобиля: " + super.speed + " км/ч");

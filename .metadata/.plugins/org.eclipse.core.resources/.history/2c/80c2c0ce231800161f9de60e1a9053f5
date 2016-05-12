@@ -43,6 +43,9 @@ public class CargoVehicle extends Car { //Грузовые автомобили
 			result+=controlWeight();//Доплата за вес
 			return result;
 		}
+				
+				
+		
 	}
 
 	

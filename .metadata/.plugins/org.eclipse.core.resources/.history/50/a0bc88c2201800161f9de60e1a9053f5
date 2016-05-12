@@ -16,6 +16,9 @@ public class PassengerVehicle extends Car {
 			result+=1000;
 			return result;
 		}
+				
+				
+		
 	}
 	
 	//Вывод информации об автомобиле

@@ -25,7 +25,7 @@ public class CargoVehicle extends Car { //Грузовые автомобили
 		}
 		
 	//Расчет стоимости проезда
-	public int calculateTarif() {
+	public int calculaTetarif() {
 		int result;
 		
 		if (super.specTransp) return 0;
@@ -43,6 +43,9 @@ public class CargoVehicle extends Car { //Грузовые автомобили
 			result+=controlWeight();//Доплата за вес
 			return result;
 		}
+				
+				
+		
 	}
 
 	
